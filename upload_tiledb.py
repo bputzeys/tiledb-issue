@@ -55,7 +55,7 @@ def upload_multiple_h5ads_to_tiledb(experiment_uri: str, adjusted_data_paths: li
 
         # the issue happens in this for loop
         # RAM usage increases with each iteration
-        # it falls back down after the loop is done but not to the original level
+        # it falls back down after a single iteration is done but not to the original level at the start of the loop
         # over time, this will cause the RAM to be filled up
         for ad in adjusted_data_paths[1:]:
             tiledbsoma.io.from_h5ad(

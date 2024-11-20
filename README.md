@@ -2,7 +2,7 @@
 
 This repo contains files to reproduce an issue I encounterd while uploading a large dataset to S3.
 
-The file [anndata_generation.py](anndata_generation.py) can be used to generate dummy data. Alternatively, it is also available via `git lfs`.
+The file [anndata_generation.py](anndata_generation.py) can be used to generate dummy data. Alternatively, individual anndatas (used in the next step) are also available via `git lfs`.
 
 Running the [upload_tiledb.py](upload_tiledb.py) requires a connectio to S3 by specifying the keys and bucket. 
 
